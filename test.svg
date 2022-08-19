@@ -1,75 +1,62 @@
-<svg fill="none" viewBox="0 0 400 120" width="400" height="120" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 400 200" width="400" height="200" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
 
       <style>
-        .tags {
+        .container {
+            background-color: #ff00ff;
             display: flex;
-            flex-wrap: wrap;
-            height: 100%;
-            width: 100%;
-            margin-bottom: 5px;
-        }
-
-        .tag {
-            display: flex;
+            height: 100vh;
             align-items: center;
             justify-content: center;
-            gap: 5px;
-            padding: 5px 15px;
-            border-radius: 10px;
-            font-weight: 500;
-            font-size: 0.85rem;
-            width: fit-content;
-            white-space: nowrap;
-            font-family:sans-serif;
-            background-color: #e3ffff;
-            color: #0ca4a5;
-            margin: 0.125em;
+            perspective: 100px;
         }
 
-        .tag:hover {
-            background-color: #ff0000;
+        .square {
+            flex-basis: 50%;
+            padding: 50px;
+            min-height: 200px;
+            background-color: white;
+            animation: anim1 3s linear infinite;
         }
 
-        @keyframes example {
-            0%   {background-color: red;}
+        #hover:target ~ .square{
+            transition: transform 2s ease-in-out;
+            animation: anim3 4s linear infinite;
+        }
+
+        #active:target ~ .square{
+            transition: transform 2s ease-in-out;
+            animation: anim2 4s linear infinite;
+        }
+
+        @keyframes anim1 {
+            0%   {background-color: red; transform: rotateX(20deg) translateY(-400px);}
             25%  {background-color: yellow;}
             50%  {background-color: blue;}
             75%  {background-color: green;}
-            100% {background-color: red;}
+            100% {background-color: red; transform: rotateX(20deg) translateY(300px);}
         }
 
-        /* The element to apply the animation to */
-        .Mydiv {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            animation-name: example;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
+        @keyframes anim2 {
+            0%   {transform: rotate(360deg);}
+            100%  {transform: rotate(0deg);}
+        }
+
+        @keyframes anim3 {
+            0%   {transform: rotate(0deg);}
+            100%  {transform: rotate(360deg);}
         }
       </style>
-
-      <div class="tags">
-        <div class="tag">Vue</div>
-        <div class="tag">React</div>
-        <div class="tag">Svelte</div>
-        <div class="tag">Angular</div>
-      </div>
-      <div class="tags">
-        <div class="tag">SASS</div>
-        <div class="tag">TypeScript</div>
-        <div class="tag">Atomic Design</div>
-      </div>
-      <div class="tags">
-        <div class="tag">Ionic</div>
-        <div class="tag">Electron</div>
-        <div class="tag">PWAs</div>
-      </div>
-
-
-        <div class="Mydiv" />
+        <div class="container">
+            <g id="hover"></g>
+            <g id="active"></g>
+            <div class="square">
+                TEST
+                <image href="./dog.gif" />
+                <image href="./dog2.png" style="background-image: url(./dog2.png);" />
+            </div>
+        </div>
     </div>
   </foreignObject>
 </svg>

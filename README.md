@@ -16,6 +16,16 @@ Here are some ideas to get you started:
 -->
 
 
-Links:
+<style>
+    .test {
+        content: url("./test.svg");
+    }
+    .test:hover {
+        content: url("./test.svg#hover");
+    }
+    .test:active {
+        content: url("./test.svg#active");
+    }
+</style>
 
-<img src="./test.svg" width="auto" height="auto">
+<img src="./test.svg" class="test" width="auto" height="auto">
