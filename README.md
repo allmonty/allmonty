@@ -1,22 +1,21 @@
-### Hi there 👋
+### About Me
 
-<!--
-**allmonty/allmonty** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I am a full-stack software engineer well versed in functional and object-oriented languages. I have a great interest in projects that impact many people. I have developed systems for a bank with more than 40 million customers that processed millions of requests per day with trust and stability.
 
-Here are some ideas to get you started:
+I work better in teams with a high sense of collaboration, where people like to work in pairs, share knowledge, and everyone can collaborate with ideas on what is developed.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+In my most recent professional experiences, I worked with microservices in Clojure, Elixir, Python, and in mobile with Flutter.
+
+### Links
+
+ - [LinkedIn](https://www.linkedin.com/in/allanbrados/)
+ - [Goodreads](https://www.goodreads.com/allmonty)
+ - [Medium](https://medium.com/@allmonty)
+ - [CodeSignal](https://app.codesignal.com/profile/allanbrados)
+ - [Exercism](https://exercism.org/profiles/allmonty)
 
 
-<style>
+<!-- <style>
     .test {
         content: url("./test.svg");
     }
@@ -28,4 +27,4 @@ Here are some ideas to get you started:
     }
 </style>
 
-<img src="./test.svg" class="test" width="auto" height="auto">
+<img src="./test.svg" class="test" width="auto" height="auto"> -->
