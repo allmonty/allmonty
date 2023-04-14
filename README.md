@@ -1,10 +1,8 @@
 ### About Me
 
-I am a full-stack software engineer well versed in functional and object-oriented languages. I have a great interest in projects that impact many people. I have developed systems for a bank with more than 40 million customers that processed millions of payments per day with trust and stability.
+Experienced Full-Stack Software Engineer with Expertise in Functional Languages. Passionate about building impactful projects that improve people's lives. Collaborative team player with a strong desire to work in an environment that fosters knowledge-sharing and idea collaboration.
 
-I work better in teams with a high sense of collaboration, where people like to work in pairs, share knowledge, and everyone can collaborate with ideas on what is developed.
-
-In my most recent professional experiences, I worked with microservices in Clojure, Elixir, Python, and in mobile with Flutter.
+Developed systems for a bank with over 40 million customers, processing millions of requests per day with trust and stability.
 
 ### My Links
 
