@@ -1,6 +1,6 @@
 ### About Me
 
-Experienced Full-Stack Software Engineer with Expertise in Functional Languages. Passionate about building impactful projects that improve people's lives. Collaborative team player with a strong desire to work in an environment that fosters knowledge-sharing and idea collaboration.
+I'm a seasoned Full-Stack Software Engineer with a passion for creating solutions that have a positive impact on people's lives. With a focus on functional languages and a proven track record in delivering high-performance systems, I thrive in collaborative environments where knowledge-sharing and innovation are celebrated.
 
 Developed systems for a bank with over 40 million customers, processing millions of requests per day with trust and stability.
 
