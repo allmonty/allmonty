@@ -12,7 +12,7 @@ When I'm not coding, you can find me enjoying my other passions: photography ðŸ“
 
 [My Photos](https://www.instagram.com/allmonty.lens) - [Goodreads](https://www.goodreads.com/allmonty) - [Letterboxd](https://letterboxd.com/allmonty/) - [Medium](https://medium.com/@allmonty) - [Exercism](https://exercism.org/profiles/allmonty)
 
-![](dog.gif)
+<!-- ![](dog.gif) -->
 
 
 <!-- <style>
