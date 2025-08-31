@@ -1,10 +1,16 @@
 ### About Me
 
-I'm a seasoned Full-Stack Software Engineer passionate about crafting impactful solutions. Specializing in functional languages, I excel in collaborative environments, driving innovation. Notable achievements include architecting high-performance systems for a bank serving 40M+ customers.
+Hey there! I'm a full-stack software engineer who's passionate about building things that make a real difference. I'm all about functional programming and get a kick out of crafting high-performance systems. I've spent time at some of Latin America's big banks, where I helped build platforms that could handle millions of requests every day, ensuring they were rock-solid and reliable. I love working with other people, sharing ideas, and innovating together.
 
-### My Links
+On the academic side, I hold a bachelor's degree in Computer Science and a postgraduate degree in AI and Machine Learning, a field I'm incredibly interested in and always looking to explore more.
 
-[LinkedIn](https://www.linkedin.com/in/allanbrados/) - [Goodreads](https://www.goodreads.com/allmonty) - [Medium](https://medium.com/@allmonty) - [CodeSignal](https://app.codesignal.com/profile/allanbrados) - [Exercism](https://exercism.org/profiles/allmonty)
+When I'm not coding, you can find me enjoying my other passions: photography 📷, playing the trumpet 🎺, trying new drinks 🍻, brewing a good coffee ☕, or getting into some games 🎮.
+
+#### Resume: [LinkedIn](https://www.linkedin.com/in/allanbrados/)
+
+#### Other Links
+
+[My Photos](https://www.instagram.com/allmonty.lens) - [Goodreads](https://www.goodreads.com/allmonty) - [Letterboxd](https://letterboxd.com/allmonty/) - [Medium](https://medium.com/@allmonty) - [Exercism](https://exercism.org/profiles/allmonty)
 
 
 <!-- <style>
