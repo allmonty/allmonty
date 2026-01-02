@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="800" height="350">
+  <defs>
+    <linearGradient id="cyber-bg-fade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a12;stop-opacity:0" />
+      <stop offset="40%" style="stop-color:#0a0a12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+
+    <mask id="fade-mask" maskContentUnits="objectBoundingBox">
+        <rect x="0" y="0" width="1" height="1" fill="url(#fade-grad)"/>
+    </mask>
+    <linearGradient id="fade-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0" stop-color="black" />
+        <stop offset="0.4" stop-color="black" />
+        <stop offset="1" stop-color="white" />
+    </linearGradient>
+
+
+    <linearGradient id="neon-cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00fff2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00a8ff;stop-opacity:1" />
+    </linearGradient>
+     <linearGradient id="neon-pink-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff0055;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cyber-brass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" /> 
+      <stop offset="50%" style="stop-color:#cba328;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8c701c;stop-opacity:1" />
+    </linearGradient>
+
+    <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <clipPath id="screen-clip-cyber">
+      <rect x="0" y="0" width="160" height="100" rx="2" />
+    </clipPath>
+
+    <pattern id="circuit-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+        <path d="M10,10 L90,10 M10,50 L90,50 M50,10 L50,90 M10,10 L10,30 M90,70 L90,90" stroke="#00fff2" stroke-width="1" opacity="0.1" fill="none"/>
+        <circle cx="10" cy="10" r="2" fill="#00fff2" opacity="0.2"/>
+        <circle cx="90" cy="50" r="2" fill="#ff00ff" opacity="0.2"/>
+    </pattern>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#cyber-bg-fade)" />
+  <rect width="100%" height="100%" fill="url(#circuit-pattern)" mask="url(#fade-mask)"/>
+
+  <g fill="none" stroke="url(#neon-cyan-grad)" stroke-width="2" opacity="0.6" filter="url(#neon-glow)">
+      <path d="M400,200 C300,200 200,150 150,120" /> <path d="M400,200 C300,250 200,280 150,280" /> <path d="M400,200 C500,200 600,150 650,120" /> <path d="M400,200 C500,250 600,280 650,280" /> <circle r="3" fill="#fff"><animateMotion dur="3s" repeatCount="indefinite" path="M400,200 C300,200 200,150 150,120"/></circle>
+      <circle r="3" fill="#fff"><animateMotion dur="4s" repeatCount="indefinite" path="M400,200 C500,200 600,150 650,120"/></circle>
+  </g>
+
+  <g transform="translate(310, 150)">
+    <rect x="-20" y="0" width="220" height="140" rx="10" fill="#2a2a3a" stroke="url(#neon-cyan-grad)" stroke-width="2" filter="url(#neon-glow)"/>
+    <rect x="-30" y="130" width="240" height="40" rx="5" fill="#1a1a2a" stroke="#00fff2" stroke-width="1"/>
+    <g fill="#00fff2" opacity="0.5">
+        <rect x="-10" y="135" width="20" height="10"/><rect x="20" y="135" width="20" height="10"/>
+        <rect x="50" y="135" width="20" height="10"/><rect x="80" y="135" width="20" height="10"/>
+        <rect x="110" y="135" width="50" height="10"/>
+        <rect x="50" y="135" width="20" height="10" fill="#fff" opacity="0">
+            <animate attributeName="opacity" values="0;1;0" dur="0.5s" begin="1s" repeatCount="indefinite"/>
+        </rect>
+    </g>
+
+    <g transform="translate(10, 15)">
+        <rect x="0" y="0" width="160" height="100" fill="#001a1a" stroke="#00fff2"/>
+        <g clip-path="url(#screen-clip-cyber)">
+            <text x="5" y="35" font-family="monospace" font-size="10" fill="#00ff00" filter="url(#neon-glow)">
+                <tspan x="5" dy="0">INITIALIZING PASSION.SYS</tspan>
+                <tspan x="5" dy="12">Loading: CYBER_TRUMPET...</tspan>
+                <tspan x="5" dy="12">Loading: NET_RUNNER_CTRL...</tspan>
+                <tspan x="5" dy="12">Loading: OPTIC_CAM...</tspan>
+                <tspan x="5" dy="12">STATUS: LINKED. READY.</tspan>
+            </text>
+            <rect width="160" height="5" fill="#00fff2" opacity="0.1">
+                <animate attributeName="y" values="0;100;0" dur="2s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0.1;0.3;0.1" dur="0.2s" repeatCount="indefinite"/>
+            </rect>
+        </g>
+    </g>
+  </g>
+
+  <g transform="translate(100, 80) rotate(-10)">
+    <rect x="0" y="0" width="70" height="40" fill="#333" stroke="#ff00ff" stroke-width="2" filter="url(#neon-glow)"/>
+    <rect x="10" y="-10" width="30" height="10" fill="#333" stroke="#ff00ff"/>
+    <circle cx="35" cy="20" r="15" fill="#111" stroke="#ff00ff" stroke-width="2"/>
+    <circle cx="35" cy="20" r="8" fill="#ff0055">
+        <animate attributeName="fill" values="#ff0055;#ff5555;#ff0055" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <g transform="translate(35, 20)">
+        <circle r="5" stroke="#ff00ff" stroke-width="1" fill="none" opacity="0">
+            <animate attributeName="r" values="5;40" dur="2s" begin="2s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="1;0" dur="2s" begin="2s" repeatCount="indefinite"/>
+             <animate attributeName="stroke-width" values="2;0" dur="2s" begin="2s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+  </g>
+
+   <g transform="translate(120, 250)">
+    <path d="M0,0 L10,60 L50,60 L60,0 Z" fill="#2a2a3a" stroke="url(#neon-cyan-grad)" stroke-width="2" filter="url(#neon-glow)"/>
+    <rect x="20" y="10" width="20" height="40" fill="#001a1a" stroke="none"/>
+    <rect x="20" y="30" width="20" height="20" fill="#00fff2" opacity="0.8">
+        <animate attributeName="y" values="30;35;30" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="height" values="20;15;20" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <g stroke="#00fff2" stroke-width="1" fill="none" opacity="0.6" filter="url(#neon-glow)">
+        <path d="M20,-10 Q30,-20 20,-30">
+            <animate attributeName="d" values="M20,-10 Q30,-20 20,-30; M20,-30 Q10,-40 20,-50" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.8;0" dur="2s" repeatCount="indefinite" />
+        </path>
+        <path d="M40,-10 Q30,-20 40,-30">
+             <animate attributeName="d" values="M40,-10 Q30,-20 40,-30; M40,-30 Q50,-40 40,-50" dur="2.5s" begin="0.5s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.8;0" dur="2.5s" begin="0.5s" repeatCount="indefinite" />
+        </path>
+    </g>
+  </g>
+
+  <g transform="translate(600, 80) rotate(10)">
+    <path d="M0,15 L80,15 L120,0 L130,0 C140,0 140,40 130,40 L120,40 L80,25 L0,25 Z" fill="url(#cyber-brass)" stroke="#d4af37" stroke-width="1"/>
+    <ellipse cx="125" cy="20" rx="5" ry="15" fill="none" stroke="url(#neon-cyan-grad)" stroke-width="2" filter="url(#neon-glow)"/>
+    <ellipse cx="115" cy="20" rx="4" ry="12" fill="none" stroke="url(#neon-cyan-grad)" stroke-width="1" opacity="0.7"/>
+    <g fill="url(#cyber-brass)" stroke="url(#neon-cyan-grad)" stroke-width="1">
+        <rect x="20" y="5" width="8" height="30"/>
+        <rect x="35" y="5" width="8" height="30"/>
+        <rect x="50" y="5" width="8" height="30"/>
+    </g>
+    <rect x="37" y="2" width="4" height="8" fill="#00fff2" filter="url(#neon-glow)">
+        <animate attributeName="y" values="2;12;2" dur="0.5s" repeatCount="indefinite" begin="0.1s"/>
+    </rect>
+    <g transform="translate(130, 20)" stroke="url(#neon-pink-grad)" fill="none" stroke-width="2" filter="url(#neon-glow)">
+        <path d="M0,-10 C10,-10 15,0 15,0 C15,0 10,10 0,10" opacity="0">
+            <animate attributeName="d" values="M0,-10 C10,-10 15,0 15,0 C15,0 10,10 0,10; M10,-20 C30,-20 40,0 40,0 C40,0 30,20 10,20" dur="2s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite"/>
+        </path>
+        <path d="M0,-10 C10,-10 15,0 15,0 C15,0 10,10 0,10" opacity="0">
+            <animate attributeName="d" values="M0,-10 C10,-10 15,0 15,0 C15,0 10,10 0,10; M10,-20 C30,-20 40,0 40,0 C40,0 30,20 10,20" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+             <animate attributeName="opacity" values="1;0" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+        </path>
+    </g>
+  </g>
+
+  <g transform="translate(600, 250) rotate(-5)">
+    <rect x="0" y="0" width="110" height="50" rx="25" fill="#2a2a3a" stroke="url(#neon-pink-grad)" stroke-width="2" filter="url(#neon-glow)"/>
+    <path d="M30,15 L40,15 L40,25 L50,25 L50,35 L40,35 L40,45 L30,45 L30,35 L20,35 L20,25 L30,25 Z" fill="#00fff2" filter="url(#neon-glow)"/>
+    <g filter="url(#neon-glow)">
+        <circle cx="85" cy="25" r="7" fill="#ff00ff"/>
+        <circle cx="95" cy="15" r="7" fill="#ffff00"/>
+    </g>
+    <circle cx="85" cy="25" r="7" fill="#fff" opacity="0">
+         <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
